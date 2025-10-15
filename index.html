@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Dine Hotel Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #faf7f2, #fff);
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #cda434, #f1d17c);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #fff8e1;
+    }
+
+    .menu {
+      max-width: 800px;
+      margin: 60px auto;
+      background: white;
+      border-radius: 25px;
+      padding: 40px 50px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 25px;
+      color: #cda434;
+      border-bottom: 2px solid #f1d17c;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .desc {
+      color: #7f8c8d;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+
+    .price {
+      font-weight: 600;
+      color: #cda434;
+      font-size: 18px;
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #f8f5f0;
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .menu {
+        padding: 25px;
+      }
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .price {
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Julicis Hotel</h1>
+    <p>Exclusive Fine Dining Experience</p>
+  </header>
+
+  <div class="menu">
+
+    <div class="section">
+      <h2>Breakfast</h2>
+      <div class="item">
+        <div>
+          <div class="name">English Breakfast</div>
+          <div class="desc">Scrambled eggs, sausages, toast & coffee</div>
+        </div>
+        <div class="price">₦3,000</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Pancakes & Syrup</div>
+          <div class="desc">Served with honey, butter & fresh fruit</div>
+        </div>
+        <div class="price">₦2,500</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Omelette Deluxe</div>
+          <div class="desc">3-egg omelette with cheese & vegetables</div>
+        </div>
+        <div class="price">₦2,000</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Lunch</h2>
+      <div class="item">
+        <div>
+          <div class="name">Jollof Rice & Chicken</div>
+          <div class="desc">Smoky jollof rice with grilled chicken & salad</div>
+        </div>
+        <div class="price">₦3,200</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Fried Rice & Turkey</div>
+          <div class="desc">Flavorful rice with spiced turkey thigh</div>
+        </div>
+        <div class="price">₦3,500</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Eba & Egusi Soup</div>
+          <div class="desc">Traditional Nigerian dish with assorted meat</div>
+        </div>
+        <div class="price">₦2,800</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Dinner</h2>
+      <div class="item">
+        <div>
+          <div class="name">Grilled Fish & Yam</div>
+          <div class="desc">Charcoal-grilled tilapia with pepper sauce</div>
+        </div>
+        <div class="price">₦3,000</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Spaghetti Bolognese</div>
+          <div class="desc">Italian pasta with rich tomato and beef sauce</div>
+        </div>
+        <div class="price">₦3,200</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Pepper Soup (Goat Meat)</div>
+          <div class="desc">Hot spicy broth with tender goat meat</div>
+        </div>
+        <div class="price">₦2,500</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Drinks</h2>
+      <div class="item">
+        <div>
+          <div class="name">Fresh Fruit Juice</div>
+          <div class="desc">Pineapple, watermelon, or orange</div>
+        </div>
+        <div class="price">₦1,500</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Chapman</div>
+          <div class="desc">Classic Nigerian cocktail with citrus flavor</div>
+        </div>
+        <div class="price">₦1,800</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Soft Drinks / Water</div>
+          <div class="desc">Coca-Cola, Fanta, Sprite, Bottled Water</div>
+        </div>
+        <div class="price">₦800</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Desserts</h2>
+      <div class="item">
+        <div>
+          <div class="name">Chocolate Cake Slice</div>
+          <div class="desc">Rich dark chocolate served warm</div>
+        </div>
+        <div class="price">₦1,800</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="name">Vanilla Ice Cream</div>
+          <div class="desc">2 scoops of creamy vanilla delight</div>
+        </div>
+        <div class="price">₦1,500</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Julicis Hotel. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
